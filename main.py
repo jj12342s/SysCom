@@ -1,6 +1,6 @@
 from threading import Thread 
 import csv 
-from colorama import Fore, Back, Style
+
 def print_diff(current, previous):
     if current != previous:
         
@@ -8,7 +8,7 @@ def print_diff(current, previous):
                 if not i:
                     continue
                 if not current[-i -1][0] == user:
-                    print(Back.BLUE + current[-i -1][0] + Style.RESET_ALL)
+                    print(current[-i -1][0] )
                     print(current[-i -1][1] + "\n")
 def refresh_incomming():
     global user
